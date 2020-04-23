@@ -19,7 +19,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 30px;
+    margin: 30px;
 }
 .photo {
     display: flex;
@@ -35,12 +35,21 @@ body {
     padding-left: 10px;
     color: #FFDC2D;
     cursor: pointer;
-}
+} 
+
+/* MAIN STYLE */
+
 .Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-grow: 2;
     height: 500px;
     overflow-y: auto;
 }
+
+/* FOOTER STYLE */
+
 .Footer {
     display: flex;
     justify-content: center;
@@ -72,7 +81,26 @@ body {
 }
 .message.received {
     background: #373737;
+    position: relative;
 }
 .message.sent {
+    background: #FF6E0A;
+    position: relative;
+}
+.message.received::before,
+.message.sent::before {
+    content: '';
+    position: absolute;
+    bottom: 21px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+.message.received::before {
+    left: 7px;
+    background: #373737;
+}
+.message.sent::before {
+    right: 7px;
     background: #FF6E0A;
 }
