@@ -1,0 +1,78 @@
+/* FONT FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Orienta&display=swap');
+/* GENERAL SETTING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Orienta', sans-serif;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo img {
+    display: block;
+    height: 40px;
+    margin-right: 20px;
+}
+.icon i {
+    padding-left: 10px;
+    color: #FFDC2D;
+    cursor: pointer;
+}
+.Main {
+    flex-grow: 2;
+    height: 500px;
+    overflow-y: auto;
+}
+.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Footer input {
+    width: 400px;
+    height: 35px;
+    background: #303031;
+    border: none;
+    border-radius:10px;
+}
+.Footer i {
+    color: #FFDC2D;
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+/* Template */
+
+.message {
+    width: 400px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #eee;
+    border-radius: 10px;
+    color: #fff;
+}
+.message.received {
+    background: #373737;
+}
+.message.sent {
+    background: #FF6E0A;
+}

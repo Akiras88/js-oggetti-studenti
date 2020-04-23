@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Chat with template</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- icons set -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    
+</head>
+<body>
+    <header class="Header">
+        <div class="photo">
+            <img src="img/Smiley.svg" alt="smile">
+            <h4>John Smith</h4>
+        </div>
+        <div class="icon">
+            <i class="fas fa-phone"></i>
+            <i class="fas fa-video"></i>
+            <i class="fas fa-info-circle"></i>
+        </div>
+    </header>
+
+    <main class='Main'></main>
+
+    <footer class="Footer">
+        <input type="text" placeholder="Digita un messaggio">
+        <i class="far fa-paper-plane"></i>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- template handlebars -->
+    <script id="message-template" type="text/x-handlebars-template">
+        <div class="message">
+            <div class="text">{ {text} }</div>
+        </div>
+        
+        
+        
+        
+        
+    </script>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.5.0.min.js"></script>
+    <!-- handlebars -->
+    <script src="assets/js/handlebars-v4.7.6.js"></script>
+    <!-- js -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
