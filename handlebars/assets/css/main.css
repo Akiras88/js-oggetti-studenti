@@ -78,6 +78,12 @@ body {
     background: #eee;
     border-radius: 10px;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.message .time {
+    align-self: flex-end;
+    font-size: 9px;
 }
 .message.received {
     background: #373737;
