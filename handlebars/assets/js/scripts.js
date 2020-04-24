@@ -26,12 +26,12 @@ $(document).ready(function () {
             time: '16.02'
         },
         {
-            text: "Bene grazie",
+            text: "è da tanto che non ci sentiamo",
             time: '16.03'
         },
         {
-            text: "Studio un po', tu?",
-            time: '16.05'
+            text: "Che fai?",
+            time: '16.04'
         },
     ];
 
@@ -54,17 +54,13 @@ $(document).ready(function () {
 
     var answers = [
         {
-            text: "Bene, tu?",
-            time: '16.02'
+            text: "Bene, grazie",
+            time: '16.10'
         },
         {
-            text: "Che fai oggi?",
-            time: '16.04'
+            text: "Studio un po'",
+            time: '16.11'
         },
-        {
-            text: "lo stesso...",
-            time: '16.05'
-        }
     ];
 
     for (var i = 0; i < answers.length; i++) {
@@ -87,7 +83,7 @@ $(document).ready(function () {
 
         var data = {
             text: message,
-            time: '16.02',
+            time: currentTime(),
             userClass: 'sent'
         };
 
@@ -108,7 +104,7 @@ $(document).ready(function () {
 
             var data = {
                 text: 'ok',
-                time: '16.02',
+                time: currentTime(),
                 userClass: 'received'
             };
 
@@ -124,6 +120,7 @@ $(document).ready(function () {
 
  }); // end document ready
 
+
 // scroll message function
 
 function scrollMessage() {
@@ -134,4 +131,23 @@ function scrollMessage() {
         scrollTop: pixelScroll
     }, 500);
 
+}
+
+// current time function
+
+function currentTime() {
+    var date = new Date();
+    var hour = addZero( date.getHours() );
+    var minutes = addZero( date.getMinutes() );
+    return hour + ':' + minutes;
+}
+
+// Add leading zero to numbers less than 10 whith 
+
+function addZero(numero) {
+    if(numero < 10) {
+        numero = '0' + numero;
+    }
+    
+    return numero;
 }

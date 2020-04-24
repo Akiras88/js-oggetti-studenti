@@ -73,6 +73,7 @@ body {
 
 .message {
     width: 400px;
+    min-height: 28px;
     margin-top: 10px;
     padding: 5px 10px;
     background: #eee;
