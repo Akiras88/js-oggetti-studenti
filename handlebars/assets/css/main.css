@@ -42,6 +42,7 @@ body {
 .Main {
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex-grow: 2;
     height: 500px;
     overflow-y: auto;
@@ -71,7 +72,7 @@ body {
 /* Template */
 
 .message {
-    width: 300px;
+    min-width: 300px;
     min-height: 28px;
     margin-top: 15px;
     padding: 5px 10px;
@@ -81,18 +82,17 @@ body {
     justify-content: space-between;
 }
 .message .time {
+    padding-left: 10px;
     align-self: flex-end;
     font-size: 9px;
 }
 .message.received {
     background: #373737;
     position: relative;
-    left: 781px;
 }
 .message.sent {
     background: #FF6E0A;
     position: relative;
-    left: 315px;
 }
 .message.received::before,
 .message.sent::before {
