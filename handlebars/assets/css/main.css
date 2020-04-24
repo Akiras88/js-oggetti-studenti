@@ -42,7 +42,6 @@ body {
 .Main {
     display: flex;
     flex-direction: column;
-    align-items: center;
     flex-grow: 2;
     height: 500px;
     overflow-y: auto;
@@ -72,11 +71,10 @@ body {
 /* Template */
 
 .message {
-    width: 400px;
+    width: 300px;
     min-height: 28px;
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 5px 10px;
-    background: #eee;
     border-radius: 10px;
     color: #fff;
     display: flex;
@@ -89,10 +87,12 @@ body {
 .message.received {
     background: #373737;
     position: relative;
+    left: 781px;
 }
 .message.sent {
     background: #FF6E0A;
     position: relative;
+    left: 315px;
 }
 .message.received::before,
 .message.sent::before {
@@ -104,10 +104,10 @@ body {
     transform: rotate(45deg);
 }
 .message.received::before {
-    left: 7px;
+    left: 282px;
     background: #373737;
 }
 .message.sent::before {
-    right: 7px;
+    right: 282px;
     background: #FF6E0A;
 }
